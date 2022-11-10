@@ -1,5 +1,4 @@
 import { useStateContext } from "./store/context";
-import { Time } from "./Time";
 
 function Hello() {
   const { dispatch, actions } = useStateContext();
@@ -9,7 +8,7 @@ function Hello() {
   }
 
   return (
-    <div onClick={handleClick}>Hello <div><Time /></div></div>
+    <div onClick={handleClick}>Hello</div>
   );
 }
 

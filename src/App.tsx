@@ -4,6 +4,7 @@ import './App.css';
 import Hello from './Hello';
 import { StateContext } from './store/context';
 import { reducer, actions, initailState } from './store/reducer'
+import { Time } from './Time';
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initailState);
@@ -16,6 +17,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <Hello />
+        <Time />
         <a
           className="App-link"
           href="https://reactjs.org"
